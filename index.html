@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>В кого більше число?</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">В кого більше число?</h1>
+
+<div class="wrapper">
+  <div class="box" id="userBlock">
+    <h2 class="hoverItalic" id="playerName">Гравець</h2>
+    <div class="value" id="playerNum">-</div>
+  </div>
+
+  <div class="box" id="pcBlock">
+    <h2 class="hoverItalic">Комп’ютер</h2>
+    <div class="value" id="pcNum">-</div>
+  </div>
+</div>
+
+<button id="startBtn" onclick="startGame()">Генерувати</button>
+
+<div id="msg" class="msg">Очікуємо початку гри...</div>
+
+<!-- Шар для миготіння -->
+<div id="flashLayer" class="flash-overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

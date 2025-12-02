@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+
+  /* Статичний пастельний градієнт */
+  background: linear-gradient(135deg, #d8f3ff, #ffe5f0, #f3ffe4);
+}
+
+.title {
+  font-size: 2.4em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #333;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.box {
+  width: 220px;
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+/* Назва гравця та комп'ютера — курсив при наведенні */
+.hoverItalic {
+  transition: 0.2s;
+}
+
+.hoverItalic:hover {
+  font-style: italic;
+}
+
+.value {
+  font-size: 52px;
+  color: #0077aa;
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+button {
+  padding: 12px 28px;
+  font-size: 20px;
+  background: #0077aa;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #005c82;
+}
+
+.msg {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Миготіння */
+.flash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.flash-green { background-color: rgba(0, 255, 0, 0.35); }
+.flash-red { background-color: rgba(255, 0, 0, 0.35); }
+.flash-yellow { background-color: rgba(255, 255, 0, 0.45); }
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
